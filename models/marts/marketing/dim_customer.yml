@@ -1,0 +1,29 @@
+version: 2
+
+models: 
+  - name: dim_customers
+    description: customer dimensions with aggregated fact data from fct_orders 
+    columns:
+      - name: customer_id 
+        description: primary key 
+        tests: 
+          - unique
+          - not_null
+      - name: first_name 
+        description: first name of each customer
+      - name: last_name 
+        description: last name of each customer
+      - name: first_order_date
+        description: the date of the customer's first order (can be NULL)
+      - name: most_recent_order_date 
+        description: the latest order date of the customer (can be NULL)
+      - name: number_of_orders
+        description: the total number of orders placed by the customer
+        tests:
+          - not_null
+      - name: lifetime_value
+        description: the total dollar amount purchased by each customer across all orders
+        tests:
+          - not_null
+              
+  
