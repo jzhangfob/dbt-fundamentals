@@ -2,13 +2,27 @@ version: 2
 
 sources:
   - name: stripe
+    description: a clone of a BigQuery database
     database: dbt-tutorial
     schema: stripe
     tables:
       - name: payment
+        description: raw payment data from source stripe platform
+        columns: 
+          - name: id
+            description: payment id (primary key)
+            tests:
+              - not_null 
+              - unique 
+          - name: orderid
+            description: foreign key to source orders table 
+            tests:
+              - relationships:
+                  field: id
+                  to: source('jaffle_shop', 'orders')
         freshness: 
           warn_after: 
-            count: 8
+            count: 12
             period: hour 
           error_after:
             count: 24

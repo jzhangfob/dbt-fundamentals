@@ -1,0 +1,19 @@
+version: 2
+
+models: 
+  - name: fct_orders
+    description: fact table that describes the total payment amount, order date, order id, and customer id (FK) of every order  
+    columns:
+      - name: customer_id 
+        description: foreign key
+        tests: 
+          - not_null
+      - name: order_id 
+        description: primary key
+        tests:
+          - unique 
+          - not_null
+      - name: order_date 
+        description: the date that the order was placed
+      - name: amount
+        description: the total payment amount of the order for successfull payments only (status = 'success')

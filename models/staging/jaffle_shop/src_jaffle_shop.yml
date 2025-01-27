@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: jaffle_shop
     description: a clone of a BigQuery database 
-    database: learn-dbt-449003
+    database: dbt-tutorial
     schema: jaffle_shop
     tables:
       - name: customers 
