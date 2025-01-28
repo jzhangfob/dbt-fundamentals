@@ -12,9 +12,9 @@ Welcome to my DBT Fundamentals repository! This project highlights my journey le
 
 ## 🔧 Development Environment Setup
 
-  -Created a BigQuery account and project.
-  -Generated a service account key to connect BigQuery to dbt.
-  -Configured dbt to work with my local development environment and GitHub for version control.
+  - Created a BigQuery account and project.
+  - Generated a service account key to connect BigQuery to dbt.
+  - Configured dbt to work with my local development environment and GitHub for version control.
 
 ## 📖 What I Learned
 1️⃣ Source Models
