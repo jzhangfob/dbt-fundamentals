@@ -54,7 +54,9 @@ Welcome to my DBT Fundamentals repository! This project highlights my journey le
 
 ## 🌳 Data Lineage Example
 
-- Below is a DAG showcasing the data lineage in this project, from source models to marts models:
+Below is a DAG showcasing the data lineage in this project, from source models to marts models. Staging models are materialized as views, and Marts models are materialized as tables.
+
+![DAG](dbt-dag.jpg)
 
 
 ## 🛠️ Tools and Technologies
