@@ -35,9 +35,9 @@ Welcome to my DBT Fundamentals repository! This project highlights my journey le
 4️⃣ Data Quality Testing
 
   - Wrote robust tests to ensure data accuracy and integrity, including:
-        - Unique and Non-Null Tests for primary keys.
-        - Relational and Accepted Values Tests to validate data consistency.
-        - Custom tests for edge-case scenarios.
+    - Unique and Non-Null Tests for primary keys.
+    - Relational and Accepted Values Tests to validate data consistency.
+    - Custom tests for edge-case scenarios.
   - Defined tests in .yml files to integrate directly into the transformation pipeline.
 
 5️⃣ Documentation
