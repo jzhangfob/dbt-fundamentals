@@ -16,7 +16,7 @@ Welcome to my DBT Fundamentals repository! This project highlights my journey le
   - Generated a service account key to connect BigQuery to dbt.
   - Configured dbt to work with my local development environment and GitHub for version control.
 
-## 📖 What I Learned
+## 📖 Project Contents
 1️⃣ Source Models
 
   - Used dbt's source macro to encapsulate raw source tables.
