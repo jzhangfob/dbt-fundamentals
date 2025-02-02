@@ -1,8 +1,8 @@
-# DBT Fundamentals Repository 🚀
+# DBT Fundamentals Repository
 
 Welcome to my DBT Fundamentals repository! This project highlights my journey learning to use dbt (data build tool) to model data from raw source tables into analysis-ready data assets. Below, you'll find an overview of the concepts, tools, and techniques I applied to build my first data transformation pipeline using BigQuery as the underlying data warehouse.
 
-## 🌟 Key Features
+## Key Features
 
   - Source Modeling: Encapsulated raw source BigQuery tables using dbt's source macro for improved modularity and adaptability to schema changes.
   - Staging Models: Built 1:1 staging models for each source model with light transformations, organized in the models/staging folder.
@@ -10,13 +10,13 @@ Welcome to my DBT Fundamentals repository! This project highlights my journey le
   - De-normalized Modeling: Applied concepts of de-normalized modeling for scalable analytics while maintaining clarity.
   - Modularity: Structured data transformations to support easier debugging, maintenance, and enhancements.
 
-## 🔧 Development Environment Setup
+## Development Environment Setup
 
   - Created a BigQuery account and project.
   - Generated a service account key to connect BigQuery to dbt.
   - Configured dbt to work with my local development environment and GitHub for version control.
 
-## 📖 Project Contents
+## Project Contents
 1️⃣ Source Models
 
   - Used dbt's source macro to encapsulate raw source tables.
@@ -52,14 +52,14 @@ Welcome to my DBT Fundamentals repository! This project highlights my journey le
 
   - Created a production job in dbt to refresh transformation pipelines daily, ensuring consistent updates for stakeholders.
 
-## 🌳 Data Lineage Example
+## Data Lineage Example
 
 Below is a DAG showcasing the data lineage in this project, from source models to marts models. Staging models are materialized as views, and Marts models are materialized as tables.
 
 ![DAG](dbt-dag.jpg)
 
 
-## 🛠️ Tools and Technologies
+## Tools and Technologies
 
   - BigQuery: Cloud-based data warehouse for raw data storage and analytics.
   - dbt: Framework for scalable and modular data transformations.
@@ -68,5 +68,3 @@ Below is a DAG showcasing the data lineage in this project, from source models t
   - SQL: Language for creating and querying data transformations.
 
 Feel free to explore this repository for examples of dbt models, configurations, tests, and documentation. Any feedback or questions are always welcome!
-
-Happy modeling! 🎉
